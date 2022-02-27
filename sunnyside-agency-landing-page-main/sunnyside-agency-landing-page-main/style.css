@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+* {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* background-color: hsl(210, 5%, 54%); */
+}
+body {
+  position: relative;
+}
+.home {
+  background: url("./images/desktop/image-header.jpg") center center / cover;
+  min-height: 90vh;
+  padding: 0 3.5vw;
+  position: relative;
+  overflow-x: hidden;
+}
+.navbar {
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0px 20px;
+}
+.logo{
+  cursor: pointer;
+  padding: 5px 0px;
+}
+.menu {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+}
+.menu li {
+  cursor: pointer;
+  padding: 7px 20px;
+  margin: 0 0;
+}
+.menu :hover {
+  background-color: rgb(114, 201, 207);
+  border-radius: 30px;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 110px 0px;
+}
+.head h1 {
+  color: azure;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+/* arrow */
+.arrow{
+  position: relative;
+  
+}
+.arrow .line {
+  position: absolute;
+  margin: auto;
+  left: 0; 
+  right: 0;
+  width: 5px;
+  height: 100px;
+  margin: 0px auto;
+  background: white;
+  display: block;
+ 
+  border-radius: 10px;
+}
+.arrow .rw {
+  position: absolute;
+  margin: auto;
+  left: 0; 
+  top:80px;
+  right: -14px;
+  width: 5px;
+  height: 20px;
+  margin: 0px auto;
+  background: rgb(255, 255, 255);
+  display: block;
+ 
+  border-radius: 10px;
+  transform: rotate(40deg);
+}
+.arrow .lw {
+  position: absolute;
+  margin: auto;
+  left: 0; 
+  top:80px;
+  right: 14px;
+  width: 5px;
+  height: 20px;
+  margin: 0px auto;
+  background: white;
+  display: block;
+  
+  border-radius: 10px;
+  transform: rotate(-40deg);
+}

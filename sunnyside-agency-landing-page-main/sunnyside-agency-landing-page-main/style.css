@@ -5,42 +5,56 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  outline: none;
+  border-style: none;
+  text-decoration: none;
   /* background-color: hsl(210, 5%, 54%); */
 }
 body {
   position: relative;
 }
-.home {
-  background: url("./images/desktop/image-header.jpg") center center / cover;
-  min-height: 90vh;
-  padding: 0 3.5vw;
-  position: relative;
-  overflow-x: hidden;
-}
+
 .navbar {
-  color: azure;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
-  margin: 0px 20px;
+  z-index: 1;
+  background-color: #3dbeff;
+  width: 100%;
+  color: azure;
+  padding: 20px 30px;
+  margin: 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.logo{
+.logo {
   cursor: pointer;
-  padding: 5px 0px;
+  margin: 6px 0;
+  padding: 0px 10px;
 }
+
 .menu {
+  padding: 7px 50px;
   font-family: "Barlow", sans-serif;
   display: flex;
 }
-.menu li {
+.menu li a {
+  color: azure;
   cursor: pointer;
-  padding: 7px 20px;
+  padding: 10px 20px;
   margin: 0 0;
 }
-.menu :hover {
-  background-color: rgb(114, 201, 207);
+.menu li a:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
+}
+.home {
+  background: url("./images/desktop/image-header.jpg") center center / cover;
+  min-height: 100vh;
+  padding: 0 3.5vw;
+  position: relative;
+  overflow-x: hidden;
 }
 .head {
   display: flex;
@@ -49,16 +63,17 @@ body {
 }
 .head h1 {
   color: azure;
+  padding: 100px 0px;
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
   font-size: 45px;
   letter-spacing: 3px;
 }
 /* arrow */
-.arrow{
+.arrow {
   position: relative;
-  transition: all .05ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  top:100px;
+  transition: all 0.05ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  top: 40px;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -67,7 +82,11 @@ body {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0px);
   }
   40% {
@@ -80,43 +99,43 @@ body {
 .arrow .line {
   position: absolute;
   margin: auto;
-  left: 0; 
+  left: 0;
   right: 0;
   width: 5px;
   height: 100px;
   margin: 0px auto;
   background: white;
   display: block;
- 
+
   border-radius: 10px;
 }
 .arrow .rw {
   position: absolute;
   margin: auto;
-  left: 0; 
-  top:80px;
+  left: 0;
+  top: 80px;
   right: -14px;
   width: 5px;
   height: 20px;
   margin: 0px auto;
   background: rgb(255, 255, 255);
   display: block;
- 
+
   border-radius: 10px;
   transform: rotate(40deg);
 }
 .arrow .lw {
   position: absolute;
   margin: auto;
-  left: 0; 
-  top:80px;
+  left: 0;
+  top: 80px;
   right: 14px;
   width: 5px;
   height: 20px;
   margin: 0px auto;
   background: white;
   display: block;
-  
+
   border-radius: 10px;
   transform: rotate(-40deg);
 }
